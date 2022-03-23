@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="ru">
     <head>
         <meta charset="utf-8">
         <title>WA4D0G - Пользователи</title>
         <link rel="icon" type="img/x-icon" href="../ico/32/favicon.png">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap-reboot.css">
+        
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
         <link rel="stylesheet" type="text/css" href="../css/site.css">
     </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="../index.html">Домашняя</a>
-                </li>
-                <li>
-                    <a class="active" href="../pages/users.html">Пользователи</a>
-                </li>
-                <li>
-                    <a href="../pages/hosts.html">АРМы</a>
-                </li>
-                <li>
-                    <a href="../pages/settings.html">Настройки</a>
-                </li>
-            </ul>
-        </div>
-        <div class="content">
-            <script src="../js/fetch-users.js"></script>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="../index.html">WA4D0G</a>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Домашняя</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/users.html">Пользователи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/hosts.html">АРМы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/settings.html">Настройки</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                <fieldset>
+                    <legend>Зарегистрированные пользователи</legend>
+                    <table class="table table-hover table-sm table-stripped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Имя</th>
+                                <th>Телефон</th>
+                                <th>Комментарий</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTable">
+                            <script src="../js/fetch-users.js"></script>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </main>
         </div>
     </body>
 </html>
