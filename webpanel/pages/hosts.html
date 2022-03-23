@@ -2,13 +2,18 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>WA4D0G - АРМы</title>
+        <title>WA4D0G - Пользователи</title>
         <link rel="icon" type="img/x-icon" href="../ico/32/favicon.png">
-        <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap-reboot.css">
+        
         <script src="../bootstrap/js/bootstrap.js"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
         <script src="../bootstrap/js/bootstrap.bundle.js"></script>
         <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
         <link rel="stylesheet" type="text/css" href="../css/site.css">
     </head>
     <body>
@@ -35,7 +40,21 @@
         </header>
         <div class="container">
             <main role="main" class="pb-3">
-                
+                <fieldset>
+                    <legend>Зарегистрированные АРМы</legend>
+                    <table class="table table-hover table-sm table-stripped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>IP-адрес</th>
+                                <th>NETBIOS-имя</th>
+                                <th>Порт для подключения</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTable">
+                            <script src="../js/fetch-hosts.js"></script>
+                        </tbody>
+                    </table>
+                </fieldset>
             </main>
         </div>
     </body>
