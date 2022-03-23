@@ -24,7 +24,15 @@
             </ul>
         </div>
         <div class="content">
-            <script src="../js/fetch-users.js"></script>
+            <div class="popup-window" id="popup">
+                <p>Test popup window</p>
+                <button class="button" onclick="document.getElementById('popup').style.opacity=0; document.getElementById('popup').style.transition='0.25s'">Закрыть окно</button>
+            </div>
+            <div>
+                <p>Нажмите эту кнопку для появления всплывающего окна</p>
+                <button class="button" onclick="document.getElementById('popup').style.opacity=1; document.getElementById('popup').style.transition='0.25s'">Открыть окно</button>
+            </div>
+            
         </div>
     </body>
 </html>
