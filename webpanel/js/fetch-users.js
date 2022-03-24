@@ -7,5 +7,6 @@ function displayItems(data) {
 }
 
 fetch('http://localhost:59562/api/users/db')
+//fetch('http://192.168.128.206:8080/api/users/db')
     .then(response => response.json())
     .then(data => displayItems(data));
