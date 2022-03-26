@@ -89,3 +89,12 @@ legend {
     border-radius: 5px;
     text-align: center;
 }
+
+.content-blurred {
+    vertical-align: middle;
+    margin-top: 60px;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    filter: brightness(30%);
+}

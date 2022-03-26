@@ -18,6 +18,22 @@ a {
   border-color: #1861ac;
 }
 
+.btn-action {
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-search {
+  background-image: url("../ico/32/search.png");
+}
+
+.btn-delete {
+  background-image: url("../ico/32/delete.png");
+}
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;

@@ -23,16 +23,25 @@
                 </li>
             </ul>
         </div>
-        <div class="content">
-            <div class="popup-window" id="popup">
-                <p>Test popup window</p>
-                <button class="button" onclick="document.getElementById('popup').style.opacity=0; document.getElementById('popup').style.transition='0.25s'">Закрыть окно</button>
-            </div>
+
+        <div class="popup-window" id="popup">
+            <p>Test popup window</p>
+            <button class="button" onclick=
+                                       "document.getElementById('popup').style.opacity=0; 
+                                        document.getElementById('popup').style.transition='0.25s'; 
+                                        document.getElementById('mainContent').className = 'content';
+                                        document.getElementsByName('body').style.filter=brightness('100%')">Закрыть окно</button>
+        </div>
+
+        <div class="content" id="mainContent">
             <div>
                 <p>Нажмите эту кнопку для появления всплывающего окна</p>
-                <button class="button" onclick="document.getElementById('popup').style.opacity=1; document.getElementById('popup').style.transition='0.25s'">Открыть окно</button>
+                <button class="button" onclick=
+                                        "document.getElementById('popup').style.opacity=1; 
+                                         document.getElementById('popup').style.transition='0.25s'; 
+                                         document.getElementById('mainContent').className = 'content-blurred';
+                                         document.getElementsByName('body').style.filter=brightness('30%%')">Открыть окно</button>
             </div>
-            
         </div>
     </body>
 </html>
