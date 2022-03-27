@@ -1,4 +1,4 @@
-const url = 'http://localhost:59562/api/users/db';
+const url = 'http://localhost:5000/api/users/db';
 
 function displayItems(data) {
     data.forEach(user => {
