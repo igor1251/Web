@@ -1,6 +1,3 @@
-// fetch('https://jsonplaceholder.typicode.com/posts/1')
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
 for (let i = 0; i < 5; i++)
 {
     let row = document.createElement('tr');
@@ -19,5 +16,5 @@ for (let i = 0; i < 5; i++)
                 <input type="submit" action="http://localhost:59562/api/hosts/${i}" method="DELETE" value="удалить"></input>
             </form>
         </td>`;
-    document.getElementById("usersTable").appendChild(row);
+    document.getElementById("hostsTable").appendChild(row);
 }

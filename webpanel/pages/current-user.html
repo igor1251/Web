@@ -42,7 +42,7 @@
             <main role="main" class="pb-3">
                 <fieldset>
                     <legend>Данные о пользователе</legend>
-                    <table class="table table-hover table-sm table-stripped">
+                    <table class="table table-hover table-sm table-stripped table-bordered">
                         <thead class="thead-dark">
                             <tr>
                                 <th>Имя</th>
@@ -52,18 +52,19 @@
                         </thead>
                         <tbody id="currentUserPersonalInfoTable"></tbody>
                     </table>
-                    <table class="table table-hover table-sm table-stripped">
-                        <thead class="thead-dark">
+                    <table class="table table-hover table-sm table-stripped table-bordered">
+                        <thead>
                             <tr>
+                                <th></th>
                                 <th>Хеш</th>
                                 <th>Алгоритм</th>
                                 <th>Дата начала</th>
                                 <th>Дата окончания</th>
-                                <th></th>
                             </tr>
                         </thead>
                         <tbody id="currentUserCertInfoTable"></tbody>
                     </table>
+                    <button id="deleteCertificatesButton" class="btn btn-secondary">Удалить</button>
                     <script src="../js/fetch-current-user.js"></script>
                 </fieldset>
             </main>

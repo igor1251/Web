@@ -42,8 +42,8 @@
             <main role="main" class="pb-3">
                 <fieldset>
                     <legend>Зарегистрированные АРМы</legend>
-                    <table class="table table-hover table-sm table-stripped">
-                        <thead class="thead-dark">
+                    <table class="table table-hover table-sm table-stripped table-bordered">
+                        <thead>
                             <tr>
                                 <th>IP-адрес</th>
                                 <th>NETBIOS-имя</th>
@@ -51,7 +51,7 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody id="usersTable">
+                        <tbody id="hostsTable">
                             <script src="../js/fetch-hosts.js"></script>
                         </tbody>
                     </table>
