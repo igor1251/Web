@@ -40,7 +40,14 @@
         </header>
         <div class="container">
             <main role="main" class="pb-3">
-                
+                <fieldset>
+                    <legend>Настройки</legend>
+                    <label>Периодичность отчетов:</label>
+                    <input type="number" id="verificationFrequencyInput" min="10" value="10">
+                    <label>сек.</label>
+                    <br>
+                    <button id="saveSettingsButton" style="margin: 15px 0px;" class="btn btn-primary">Сохранить</button>
+                </fieldset>
             </main>
         </div>
     </body>
